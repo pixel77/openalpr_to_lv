@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE>OpenALPR-base.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="OpenALPR_base.vi"></A><H2>OpenALPR-base.vi</H2>
+<P>This project is help to integrate the OpnelALPR open source ALPR system to LabVIEW (for LV 2014 or newer versions). Everything is documented in the LV and C++ codes, if you want to find more information about the project, what this readme contains. The project also contains a html help for the example LW program, which could be find in the Help directory in the project.</P>
+<P></P>
+<P>&lt;b&gt;Important!!!&lt;/b&gt;</P>
+<P>The „openalpr_32” directory contains the 2.3 version of the OpnelALPR open source ALPR system. For the sucesfull operation please copy the „openalpr_32” directory to C:/ in a folder (or whether you want). And create a &quot;OPENALPR_PATH&quot; environment variable, which have to point to the directory which contains the &quot;openalpr_32&quot; directory. The environment variable’s value must be the path of the directory, which contains the „openalpr_32” directory, not the „openalpr_32” directory’s path itself. (eg. “C:\OpenALPR\alpr_32”, where the “OPENALPR_PATH” environment variable’s value is “C:\OpenALPR”)</P>
+<P><IMG SRC="OpenALPR-basec.png" ALT="OpenALPR-base.vi"></P>
+<P><IMG SRC="OpenALPR-basep.png" ALT="OpenALPR-base.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Default Country</B> <P>Set the default country or region for the recognisation(for example: &quot;hu&quot; for Hungary). Default is &quot;hu&quot;.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Max Possibility</B> <P>An int type of data, witch contains how much possibilities  we want to receive for every recognised licence plate with the possibility percentage.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>image path to recognise</B> <P>The path of the image, which will be recognised.</P>
+<P>The pragram rearrange it as a string, and replace every / with \, so the dll can do the work with the passed string as a path.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>Init Return</B> <P>Returns the error value of the initialization. &quot;OK &quot; if no errors occurs. &quot;ERR_LOAD&quot; when the loading occurs errors.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>Place of the Image</B> <P>The string type path (with / instead of \) of the image, which have been recognised.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>Detected Licence Plates as String</B> <P>Returns all detected plates in a single string. Could be &quot;ERR_LOAD&quot; or &quot;ERR_NO_PLATE&quot; if any errors occurs.</P>
+<P></P>
+<P>The returned string's building pattern:</P>
+<P> - the first number is information about the number of recognised plates in the picture.</P>
+<P> - after the % symbol this is the same pattern all for the recignised plate:</P>
+<P>  --  Plate_n: the n is number of the recongnised plate.</P>
+<P>  --  recognisedplate_x%, : the plates are arranged in possibility prom the hightest to the lowest. In this pattern the recognisedplate is the plate's possible  string(e.g.: ABC-123) without the &quot;-&quot; token(so the output in our example is ABC123). After the &quot;_&quot; tofen we can find the possibility percentage. afer every plate possibility there are a &quot;,&quot; and after every recognised plate are a &quot;;&quot; token.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2dstr.png" ALT="i2dstr"></P>
+</TD>
+<TD>
+<B>Processed Recognise Data:</B> <P>Review the recognised plates and the plate ID's possibilities as a LabVIEW 2D Array. You can save this data to files or use it in your application as a normal Array.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>Rendszámadatok</B> <P>Every column and row contains 1 type of data. In every first row, the first column contains the date and time, the another columns are containing 1 and 1 plate possibility, with the possibility percentage in every second row.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>
