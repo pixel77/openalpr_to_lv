@@ -19,9 +19,13 @@ using namespace std;
 using namespace alpr;
 using namespace cv;
 
+
+// Licenced by Affero GPLv3 Licence http://www.gnu.org/licenses/agpl-3.0.html
+
+
 /*
-string confEnd = "E:/Felhasználók/Pixelbetyár/Documents/Visual Studio 2015/Projects/LvDLL/ALPRdll/openalpr.conf";
-string runtimeEnd = "E:/Felhasználók/Pixelbetyár/Documents/Visual Studio 2015/Projects/LvDLL/ALPRdll/runtime_data";
+string confEnd = "E:/FelhasznÃ¡lÃ³k/PixelbetyÃ¡r/Documents/Visual Studio 2015/Projects/LvDLL/ALPRdll/openalpr.conf";
+string runtimeEnd = "E:/FelhasznÃ¡lÃ³k/PixelbetyÃ¡r/Documents/Visual Studio 2015/Projects/LvDLL/ALPRdll/runtime_data";
 */
 
 string path(char* addStr) {
