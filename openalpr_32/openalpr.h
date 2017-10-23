@@ -1,0 +1,25 @@
+public: __thiscall alpr::Alpr::Alpr(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: __thiscall alpr::Alpr::Alpr(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: virtual __thiscall alpr::Alpr::~Alpr(void);
+public: void __thiscall alpr::Alpr::setCountry(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: void __thiscall alpr::Alpr::setPrewarp(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: void __thiscall alpr::Alpr::setMask(unsigned char *,int,int,int);
+public: void __thiscall alpr::Alpr::setDetectRegion(bool);
+public: void __thiscall alpr::Alpr::setTopN(int);
+public: void __thiscall alpr::Alpr::setDefaultRegion(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: class alpr::AlprResults __thiscall alpr::Alpr::recognize(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: class alpr::AlprResults __thiscall alpr::Alpr::recognize(class std::vector<char,class std::allocator<char> >);
+public: class alpr::AlprResults __thiscall alpr::Alpr::recognize(class std::vector<char,class std::allocator<char> >,class std::vector<class alpr::AlprRegionOfInterest,class std::allocator<class alpr::AlprRegionOfInterest> >);
+public: class alpr::AlprResults __thiscall alpr::Alpr::recognize(unsigned char *,int,int,int,class std::vector<class alpr::AlprRegionOfInterest,class std::allocator<class alpr::AlprRegionOfInterest> >);
+public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl alpr::Alpr::toJson(class alpr::AlprResults);
+public: static class alpr::AlprResults __cdecl alpr::Alpr::fromJson(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: bool __thiscall alpr::Alpr::isLoaded(void);
+public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl alpr::Alpr::getVersion(void);
+public: class alpr::Config * __thiscall alpr::Alpr::getConfig(void);
+public: __thiscall alpr::Alpr::Alpr(class alpr::Alpr const &);
+public: class alpr::Alpr & __thiscall alpr::Alpr::operator=(class alpr::Alpr const &);
+const alpr::Alpr::`vftable';
+public: __thiscall alpr::Alpr::Alpr(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: __thiscall alpr::Alpr::Alpr(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+public: __thiscall alpr::Alpr::Alpr(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >);
+
