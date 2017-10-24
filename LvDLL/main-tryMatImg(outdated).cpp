@@ -20,7 +20,11 @@ using namespace alpr;
 using namespace cv;
 
 
-// Licenced by Affero GPLv3 Licence http://www.gnu.org/licenses/agpl-3.0.html
+/* 
+	The OpenALPR parts are Licenced by Affero GPLv3 Licence http://www.gnu.org/licenses/agpl-3.0.html.
+	For the whole licence policy check out the README.
+	Created by Vágner Máté.
+*/
 
 
 /*
