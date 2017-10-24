@@ -20,7 +20,11 @@ string confEnd = "E:/Felhasználók\\Pixelbetyár\\Documents\\Visual Studio 2015
 string runtimeEnd = "E:/Felhasználók/Pixelbetyár/Documents/Visual Studio 2015/Projects/LvDLL/ALPRdll/runtime_data";
 
 
-// Licenced by Affero GPLv3 Licence http://www.gnu.org/licenses/agpl-3.0.html
+/* 
+	The OpenALPR parts are Licenced by Affero GPLv3 Licence http://www.gnu.org/licenses/agpl-3.0.html.
+	For the whole licence policy check out the README.
+	Created by Vágner Máté.
+*/
 
 
 string path(char* addStr) {
