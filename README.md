@@ -8,5 +8,7 @@ Important!
 The „openalpr_32” directory contains the 2.3 version of the OpnelALPR open source ALPR system.
 For the sucesfull operation please copy the „openalpr_32” directory to C:/ in a folder (or whether you want). And create a "OPENALPR_PATH" environment variable, which have to point to the directory which contains the "openalpr_32" directory. The environment variable’s value must be the path of the directory, which contains the „openalpr_32” directory, not the „openalpr_32” directory’s path itself. (eg. “C:\OpenALPR\alpr_32”, where the “OPENALPR_PATH” environment variable’s value is “C:\OpenALPR”)
 
+The project is created primary for school/home projects and for educational use. For help to learn and understand the multi-language programming. It's could be use for stundents to understand the basic part of the dll creating and integrating for LabVIEW, what is already a language to help to learn students from progamming and for faster code developnig, while it's still a language used wide range. My goal to make it easyer for students to make their first step both for the C and other script based languages from labview and in the image processing too. But you could use it in any project where you think it's fit in thougth.
+
 Created by Vágner Máté, Hungary. http://smartmark.hu/ e-mail: vminfo77[at]gmail[dot]com (sorry for the e-mail andress, but i don't want to get thousands of spam letters).
 Copyright 2017 Vágner Máté.
