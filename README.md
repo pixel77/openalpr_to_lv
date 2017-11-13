@@ -10,5 +10,7 @@ For the sucesfull operation please copy the „openalpr_32” directory to C:/ i
 
 The project is created primary for school/home projects and for educational use. For help to learn and understand the multi-language programming. It's could be use for stundents to understand the basic part of the dll creating and integrating for LabVIEW, what is already a language to help to learn students from progamming and for faster code developnig, while it's still a language used wide range. My goal to make it easyer for students to make their first step both for the C and other script based languages from labview and in the image processing too. But you could use it in any project where you think it's fit in thougth.
 
+You HAVE TO install the Microsoft Visual Studio 2015, because the DLL needs some DLLs from the Visual Studio developer library!!!
+
 Created by Vágner Máté, Hungary. http://smartmark.hu/ e-mail: vminfo77[at]gmail[dot]com (sorry for the e-mail andress, but i don't want to get thousands of spam letters).
 Copyright 2017 Vágner Máté.
